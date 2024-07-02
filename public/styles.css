@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .navbar {
+    height: 60px;
+    width: 100vw;
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar h1{
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 2px 1px gray;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    min-height: calc(100vh - 80px); /* Adjust height to account for the navbar */
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.334);
+    margin: 10px auto;
+    padding: 20px;
+    max-width: 500px;
+  }
+
+  .qr-img{
+    height: 200px;
+    width: auto;
+    margin: 10px;
+  }
+
+  .container h3, p{
+    margin: 10px;
+  }
+
+  .qr-text{
+    width: 400px;
+    height: 50px
+  }
+  
+  #qrcode-container img {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+
+  .qr-code-img {
+    height: 200px; /* Adjust this value to your desired height */
+  }
+  
+  input, button {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  

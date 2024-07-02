@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <h1>QR Code Generator</h1>
+  </div>
+  
+  <div class="container">
+    <img src="/qr-img.png" alt="qr-logo" class="qr-img">
+    <h3>QR Code Generator</h3>
+    <p>QR Codes allow users to access your website easily and quickly by simply scanning it.</p>
+    <p>Enter your URL below to generate a QR Code and redirect to the image.</p>
+    <form action="/generate" method="POST">
+      <input type="text" name="text" id="text-input" placeholder="Enter text to generate QR code" class="qr-text">
+      <button type="submit" id="generate-btn">Generate QR Code</button>
+    </form>
+    <% if (typeof qrcodeUrl !== 'undefined') { %>
+      <div id="qrcode-container">
+        <img src="<%= qrcodeUrl %>" alt="QR Code" class="qr-code-img">
+      </div>
+    <% } %>
+  </div>
+</body>
+</html>
